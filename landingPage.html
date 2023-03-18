@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="./assets/Bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- <script src="./assets/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/Bootstrap/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="./assets/Carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/Carousel/owl.theme.default.css">
+
+    <link rel="stylesheet" href="./assets/MainCSS/base.css">
+    <link rel="stylesheet" href="./assets/MainCSS/main.css">
+    <link rel="stylesheet" href="./assets/MainCSS/res.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/Carousel/jquery.min.js"></script>
+    <script src="./assets/Carousel/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container wide">
+        <header id="header" class="header">
+            <div class="card border-0 rounded-0 header-main">
+                <nav class="navbar navbar-expand-md mb-5">
+                    <div class="container-fluid align-items-center">
+                        <a class="navbar-brand fs-3 fw-bold" href="#">ELITE</a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class=""><i class="bi bi-list"></i></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 align-items-center ">
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-6 px-0 py-1 me-md-5 fw-medium" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-6 px-0 py-1 me-md-5 fw-medium" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fs-6 px-0 py-1 me-md-5 fw-medium" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn px-3 py-2 fs-6 fw-semibold btn-white border-0"
+                                            href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="text-center">
+                    <h5 class="card-title fs-1 col-xl-4 m-auto">Plan your Adventures with us</h5>
+                    <p class="card-text fs-5 fw-normal mb-4">Experience a journey full of adventures with the
+                        peaceful environment.</p>
+                    <button class="btn btn-pri fw-bold fs-6 mb-5">Explore Now</button>
+                </div>
+            </div>
+
+            <div class="header-sub row w-100 translate-middle-y">
+                <nav class="navbar navbar-expand mx-auto col-md-8 p-4">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse row flex-row justify-content-center"
+                            id="navbarSupportedContent">
+                            <form class="d-flex flex-column col mb-md-0 mb-3" role="search">
+                                <label class="mb-2 fw-semibold fs-6" for="header-search">Location</label>
+                                <input id="header-search" class="form-control px-3 py-2" type="search"
+                                    placeholder="Search location" aria-label="Search">
+                            </form>
+
+                            <ul class="col mb-md-0 mb-3 list-unstyled">
+                                <li class="nav-item dropdown w-100">
+                                    <label class="mb-2 fw-semibold fs-6" for="">Price Range</label>
+                                    <a class="nav-link dropdown-toggle fs-6 px-3 py-2" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        $400 - $1000
+                                        <i class="bi bi-chevron-down float-sm-end"></i>
+                                    </a>
+                                    <ul class="dropdown-menu w-100">
+                                        <li><a class="dropdown-item" href="#">$600</a></li>
+                                        <li><a class="dropdown-item" href="#">$800</a></li>
+                                        <li><a class="dropdown-item" href="#">$1000</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <form class="d-flex col-3 justify-content-center" role="search">
+                                <button class="btn btn-white search-btn fs-6 fw-medium" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content mt-5">
+            <section class="popular">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 mb-2 fw-bold">Popular Destinations</h5>
+                        <h6 class="card-subtitle fs-6 fw-normal">From religious places to natural splendours. Visit the
+                            most popular places.</h6>
+
+
+                        <div class="owl-carousel owl-theme popular-slider mt-5">
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/popular/1.jpg" class="" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title me-2 my-0">01</h5>
+                                            <div class="dash"></div>
+                                        </div>
+                                        <p class="card-text fw-medium">Budapest, Hungary</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/popular/2.webp" class="" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title me-2 my-0">02</h5>
+                                            <div class="dash"></div>
+                                        </div>
+                                        <p class="card-text fw-medium">United Kingdom</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/popular/3.webp" class="" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title me-2 my-0">03</h5>
+                                            <div class="dash"></div>
+                                        </div>
+                                        <p class="card-text fw-medium">Verona, Italy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/popular/4.jpg" class="" alt="...">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="card-title me-2 my-0">04</h5>
+                                            <div class="dash"></div>
+                                        </div>
+                                        <p class="card-text fw-medium">Paris, France</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var owl = $('.owl-carousel');
+                    owl.owlCarousel({
+                        items: 4,
+                        loop: true,
+                        margin: 10,
+                        autoplay: true,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: true
+                            },
+                            650: {
+                                items: 3,
+                                nav: true
+                            },
+                            800: {
+                                items: 4,
+                                nav: true,
+                                loop: true
+                            }
+                        }
+                    });
+                    $('.play').on('click', function () {
+                        owl.trigger('play.owl.autoplay', [1000])
+                    })
+                    $('.stop').on('click', function () {
+                        owl.trigger('stop.owl.autoplay')
+                    })
+                </script>
+
+            </section>
+
+            <section class="special mt-5">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 mb-2 fw-bold">Special Offers</h5>
+                        <h6 class="card-subtitle fs-6 fw-normal">We surprise our customer with amazing offers. Get your
+                            offer right now!</h6>
+
+                        <div class="owl-carousel owl-theme popular-slider mt-5">
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/special/bud.jpg" class="" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-medium">Trip to Budapest <span
+                                                class="badge btn-pri float-end total">$10300</span></h5>
+                                        <p class="card-text"><span class="badge btn-gray"><i class="bi bi-person"></i>2
+                                                persons</span>
+                                            <span class="badge btn-gray"><i class="bi bi-clock"></i></i>2 nights</span>
+                                        </p>
+                                        <a href="#" class="btn btn-white">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/special/UK.jpg" class="" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-medium">Trip to United Kingdom <span
+                                                class="badge btn-pri float-end total">$15700</span></h5>
+                                        <p class="card-text"><span class="badge btn-gray"><i class="bi bi-person"></i>1
+                                                persons</span>
+                                            <span class="badge btn-gray"><i class="bi bi-clock"></i></i>2 nights</span>
+                                        </p>
+                                        <a href="#" class="btn btn-white">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="card">
+                                    <img src="./assets/img/special/verona.jpg" class="" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-6 fw-medium">Trip to Verona <span
+                                                class="badge btn-pri float-end total">$9400</span></h5>
+                                        <p class="card-text"><span class="badge btn-gray"><i class="bi bi-person"></i>2
+                                                persons</span>
+                                            <span class="badge btn-gray"><i class="bi bi-clock"></i></i>2 nights</span>
+                                        </p>
+                                        <a href="#" class="btn btn-white">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var owl = $('.owl-carousel');
+                    owl.owlCarousel({
+                        items: 4,
+                        loop: true,
+                        margin: 10,
+                        autoplay: true,
+                        autoplayTimeout: 1000,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: true
+                            },
+                            650: {
+                                items: 2,
+                                nav: false
+                            },
+                            800: {
+                                items: 3,
+                                nav: true,
+                                loop: true
+                            }
+                        }
+                    });
+                    $('.play').on('click', function () {
+                        owl.trigger('play.owl.autoplay', [1000])
+                    })
+                    $('.stop').on('click', function () {
+                        owl.trigger('stop.owl.autoplay')
+                    })
+                </script>
+
+            </section>
+
+
+            <section class="gallery">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 mb-2 fw-bold">Destinations Gallery</h5>
+                        <h6 class="card-subtitle fs-6 fw-normal">Find out your favourite destination to continue your
+                            journey.</h6>
+                        <div class="d-flex justify-content-between align-items-center mt-3 more mb-5">
+                            <p class="card-text mb-0 fw-bold  fs-6">Our photo gallery</p>
+                            <a href="" class="btn btn-white px-3 py-1">View All <i class="bi bi-arrow-right"></i></a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4 g-item">
+                                <img class="w-100" src="./assets/img/gallery/d.jpg" alt="">
+                            </div>
+
+                            <div class="col-4 g-item">
+                                <img class="w-100" src="./assets/img/gallery/e.jpg" alt="">
+                            </div>
+
+                            <div class="col-4 g-item">
+                                <div class="position-relative">
+                                    <img class="w-100" src="./assets/img/gallery/a.jpg" alt="">
+                                    <div class="overlay position-absolute">20+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="what">
+                <h5 class="fw-bold fs-5 text-center">What's Special ?</h5>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-4 what-item">
+                        <div class="card border-0 text-center">
+                            <div
+                                class="card-icon rounded-circle d-flex m-auto justify-content-center align-items-center p-3">
+                                <i class="bi bi-basket"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 fw-semibold">1000+ Trips</h5>
+                                <p class="card-text fs-6 fw-normal">Be a part of our successful trips and start your
+                                    adventure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 what-item">
+                        <div class="card border-0 text-center">
+                            <div
+                                class="card-icon rounded-circle d-flex m-auto justify-content-center align-items-center p-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 fw-semibold">15,000+ Customers</h5>
+                                <p class="card-text fs-6 fw-normal">We have over 15,000 happy customers with our
+                                    journeys.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 what-item">
+                        <div class="card border-0 text-center">
+                            <div
+                                class="card-icon rounded-circle d-flex m-auto justify-content-center align-items-center p-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title fs-5 fw-semibold">100+ Destinations</h5>
+                                <p class="card-text fs-6 fw-normal">Visit a large number of destinations with our
+                                    guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="tail mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card border-0 p-5">
+                            <div class="card-body p-0">
+                                <h5 class="card-title fs-4 fw-semibold">Get Wonderful Experiences With Our Adventures !
+                                </h5>
+                                <p class="card-text fs-6 fw-normal">Be a part of our trip adventures and get wonderful
+                                    experiences throughout
+                                    our journeys. Visit your dream places and get the maximun satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 tail-vid">
+                        <video class="w-100 h-100 p-5" src="" controls></video>
+                    </div>
+
+                </div>
+            </section>  
+
+            <section class="why mt-5">
+                <div class="card text-center border-0">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Why Us?</h5>
+                        <p class="card-text mb-3 fw-medium fs-6">We have satisfled thousands of customers and they have
+                            enjoyed their best
+                            moments with us. Book your trips to your favourite destinations and explore the history,
+                            religion, nature and much more with our expert guidance. Find more about our jourey through
+                            our blog.</p>
+                        <a href="#" class="btn btn-pri">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <footer class="footer wide container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4 footer-l order-2 order-md-1">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h5 class="card-title fs-5 fw-bold">ELITE</h5>
+                        <p class="card-text fs-6 fw-normal"><i class="bi bi-c-circle"></i> Copyright 2020-2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 row footer-r order-1 order-md-2">
+                <div class="col-12 col-lg-6 d-flex">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item border-0 fw-bold fs-5">
+                            Information
+                        </a>
+                        <a href="#" class="list-group-item border-0 fw-medium fs-6">Home</a>
+                        <a href="#" class="list-group-item border-0 fw-medium fs-6">About Us</a>
+                        <a href="#" class="list-group-item border-0 fw-medium fs-6">Blog</a>
+                    </div>
+                    
+                    <div class="list-group">
+                        <a href="#" class="list-group-item border-0 fw-bold fs-5">
+                            Contact
+                        </a>
+                        <a href="#" class="list-group-item border-0 fw-medium fs-6">+94 123 432 567</a>
+                        <a href="#" class="list-group-item border-0 fw-medium fs-6">Eliteinfo@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <div class="list-icon d-flex">
+                        <div class="rounded-circle mx-3"><i class="fs-4 bi bi-twitter"></i></div>
+                        <div class="rounded-circle mx-3"><i class="fs-4 bi bi-facebook"></i></div>
+                        <div class="rounded-circle mx-3"><i class="fs-4 bi bi-linkedin"></i></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

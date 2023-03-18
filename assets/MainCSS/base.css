@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #ff8a5c;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-bg-color: #f5f5f5;
+    --gray-txt-color: #afb0b2;
+    --speca-bg-color: #efe1f0;
+    --speca-txt-color: #9a44a1;
+    --specb-bg-color: #dfeaf6;
+    --specb-txt-color: #4b86ca;
+    --specc-bg-color: #fee9d9;
+    --specc-txt-color: #fa6e03;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wide {
+    max-width: 1200px;
+}

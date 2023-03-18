@@ -1,0 +1,231 @@
+.btn {
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-white,
+.btn-pri:hover,
+.btn-pri:active,
+.btn-pri:focus-visible {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
+    background-color: var(--white-color) !important;
+}
+
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus-visible,
+.btn-pri {
+    color: var(--white-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+.btn-gray {
+    background-color: var(--gray-bg-color);
+    color: var(--gray-txt-color);
+    border: none;
+}
+
+/* component */
+.header .card {
+    background: url("/assets/img/main-img.jpg") no-repeat top center;
+    background-size: cover;
+    aspect-ratio: 2;
+}
+
+.header-main .navbar .navbar-brand,
+.header-main .navbar-nav .nav-item a,
+.header-main .card-title,
+.header-main .card-text,
+.header-main .navbar button span {
+    color: var(--white-color);
+}
+
+.header-main .navbar-nav .nav-item:first-child a {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header-sub {
+    margin: 0;
+}
+
+.header-sub .navbar {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px #000;
+}
+
+.header-sub .navbar .form-control,
+.header-sub .navbar .form-control::placeholder,
+.header-sub .navbar .dropdown a {
+    background-color: var(--gray-bg-color);
+    color: var(--gray-txt-color);
+    border: none;
+}
+
+.header-sub .navbar .form-control,
+.header-sub .navbar .dropdown a {
+    border-radius: 0.375rem;
+}
+ 
+.dropdown-toggle::after {
+    content: none;
+}
+
+.header-sub .search-btn {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.offcanvas {
+    background-color: var(--speca-bg-color) !important;
+}
+
+/* content */
+/* popular */
+.popular {
+
+}
+
+.popular .popular-slider .item {
+
+}
+
+.popular-slider .item .card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.popular-slider .item img {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.dash {
+    border: 1px solid var(--primary-color);
+    width: 30%;
+}
+
+.special .card {
+    background: f9f9f9;
+}
+
+.special .item .total {
+    border-radius: 30px;
+}
+
+.special .item .btn {
+    font-size: 14px;
+    padding: 6px 1rem;
+}
+
+.gallery .more p {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.gallery .g-item img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.gallery .g-item .overlay {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 48px;
+    border-radius: 12px;
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery .g-item .overlay:hover {
+    cursor: pointer;
+}
+
+
+.what-item .card .card-icon {
+    aspect-ratio: 1;
+    background-color: var(--speca-bg-color);
+    line-height: 0;
+}
+
+.what-item:nth-child(1) .card .card-icon {
+    background-color: var(--speca-bg-color);
+}
+
+.what-item:nth-child(1) .card .card-icon i {
+    color: var(--speca-txt-color);
+}
+
+.what-item:nth-child(2) .card .card-icon {
+    background-color: var(--specb-bg-color);
+}
+
+.what-item:nth-child(2) .card .card-icon i {
+    color: var(--specb-txt-color);
+}
+
+.what-item:nth-child(3) .card .card-icon {
+    background-color: var(--specc-bg-color);
+}
+
+.what-item:nth-child(3) .card .card-icon i {
+    color: var(--specc-txt-color);
+}
+
+.tail {
+ background: url("/assets/img/b.jpg") no-repeat;
+ background-size: cover;
+}
+
+.tail .card {
+    background: none;
+}
+
+.tail .card-title,
+.tail .card-text {
+    color: var(--white-color);
+}
+
+.tail-vid {
+    background: none;
+}
+
+.why .card-text {
+    color: var(--black-color);
+}
+
+.footer {
+    background: #f9f9f9;
+}
+
+.footer .card,
+.footer .list-group,
+.footer .list-group .list-group-item {
+    background: none;
+}
+
+.footer-l .card-text {
+    color: var(--gray-txt-color);
+}
+
+.footer-r .list-icon div {
+    aspect-ratio: 1;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+}
+
+.footer-r .list-icon i {
+    line-height: 0;
+}

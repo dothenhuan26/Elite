@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .header-sub {
+        position: relative !important;
+        transform: translateX(0) !important;
+        margin-top: 2rem;
+    }
+
+    .offcanvas-body li:last-child a {
+        color: var(--black-color);
+    }
+}
